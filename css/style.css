@@ -235,6 +235,19 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
 }
+
+.hero-overlay {
+  /*место под картинку*/
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+  background-repeat: no-repeat; /*без повторов*/
+  background-position: center; /*по центру*/
+  background-size: cover; /*размер покрыть место*/
+ /*1) темный прозрачный фон через градиент*/ /*2) под ним картинка*/
+  background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4),  rgba(47, 48, 58, 0.4)),  url(../images/img_hero.jpg);
+  }
+  
 .section-hero-title {
   font-weight: 900;
   font-size: 44px;

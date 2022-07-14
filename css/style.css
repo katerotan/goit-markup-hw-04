@@ -303,9 +303,7 @@ body {
   content: '';
   display: block;
   height: 120px;
-
   background-color: var(--background-team);
-
   background-repeat: no-repeat;
   background-position: center;
 }

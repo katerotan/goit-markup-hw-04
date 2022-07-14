@@ -299,30 +299,6 @@ body {
   width: 270px;
 }
 
-.section-specials-item::before {
-  content: '';
-  display: block;
-  height: 120px;
-
-  background-color: var(--background-team);
-
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.icon-antenna::before {
-  background-image: url(../images/antenna1.svg);
-}
-.icon-clock::before {
-  background-image: url(../images/clock1.svg);
-}
-.icon-diagram::before {
-  background-image: url(../images/diagram1.svg);
-}
-.icon-astronaut::before {
-  background-image: url(../images/astronaut1.svg);
-}
-
 .section-specials-item-title {
   font-weight: 700;
   font-size: 14px;

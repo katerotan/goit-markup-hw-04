@@ -51,16 +51,25 @@
 }
 
 .socials-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0;
   margin: 0;
-}
-.socials-list-link:hover {
-  fill: var(--link-hover-accent);
-}
-.social-icon {
-  display: block;
   width: 44px;
   height: 44px;
+  border-radius: 50%;
+}
+
+.social-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.socials-list-link:hover {
+  background: var(--link-hover-accent);
 }
 .social-icon:hover {
   fill: var(--button-filter-hover-accent);

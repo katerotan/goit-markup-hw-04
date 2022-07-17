@@ -415,7 +415,7 @@ body {
 
 .collegues {
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 0px; /*cняла 32, чтобы уместилось 16 от линков*/
 }
 
 .section-team-name {

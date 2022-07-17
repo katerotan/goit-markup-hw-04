@@ -1,6 +1,3 @@
-/*Конверт и телефон*/
-/*Нужно еще: настроить ховер на картинки*/
-
 .header-contacts-link::before {
   content: '';
   display: inline-block;
@@ -59,8 +56,11 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  background-color: #ffffff;
 }
-
+.socials-list-link:hover {
+  background-color: var(--link-hover-accent);
+}
 .social-icon {
   display: block;
   width: 20px;
@@ -68,9 +68,6 @@
   fill: #afb1b8;
 }
 
-.socials-list-link:hover {
-  background: var(--link-hover-accent);
-}
 .social-icon:hover {
   fill: var(--button-filter-hover-accent);
 }

@@ -11,15 +11,20 @@
 }
 
 .icon-envelope::before {
+  content: '';
   background-image: url(../images/envelope.svg);
   width: 16px;
   height: 12px;
 }
 
 .icon-smarthphone::before {
+  content: '';
   background-image: url(../images/smartphone.svg);
   width: 10px;
   height: 16px;
+}
+.icon-envelope:hover::before {
+  background-image: url(../images/envelope.svg);
 }
 
 /*Наша команда социалки*/
@@ -27,7 +32,7 @@
   display: flex;
   justify-content: center;
   gap: 10px;
-  outline: 2px solid tomato;
+
   list-style: none;
   padding-inline-start: 0px;
   padding-left: 32px;
@@ -41,7 +46,6 @@
   justify-content: center;
   align-items: center;
 
-  outline: 2px solid orange;
   padding: 0;
   margin: 0;
 }
@@ -104,10 +108,15 @@
   padding: 0;
   margin: 0;
 }
+
 .client-icon {
   display: block;
   width: 170px;
   height: 92px;
+  fill: #afb1b8;
+}
+.client-icon:hover {
+  fill: var(--link-hover-accent);
 }
 
 /*Футер линки*/

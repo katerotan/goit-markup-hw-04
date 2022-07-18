@@ -166,6 +166,32 @@ body {
   color: var(--link-contacts-hover-accent);
 }
 
+.header-contacts-link::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px;
+}
+
+.icon-envelope::before {
+  content: '';
+  background-image: url(../images/envelope.svg);
+  width: 16px;
+  height: 12px;
+}
+
+.icon-smarthphone::before {
+  content: '';
+  background-image: url(../images/smartphone.svg);
+  width: 10px;
+  height: 16px;
+}
+.icon-envelope:hover::before {
+  background-image: url(../images/envelope.svg);
+}
+
 /*--------------------------------------------FOOTER--------------------------------------------*/
 .footer {
   background-color: var(--background-footer);
@@ -225,6 +251,59 @@ body {
 .footer-address-link:hover,
 .footer-address-link:focus {
   color: var(--link-contacts-hover-accent);
+}
+.direction {
+  display: flex;
+}
+.footer-socials {
+  margin-left: 70px;
+}
+.footer-socials-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16.41px;
+  color: #ffffff;
+  margin: 0;
+  margin-top: 14.8px;
+  margin-bottom: 20px;
+  padding: 0;
+}
+.webstudio-socials-list {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-inline-start: 0px;
+}
+.webstudio-socials-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+  margin: 0;
+}
+.webstudio-socials-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+.webstudio-social-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: var(--button-filter-hover-accent);
+}
+.webstudio-socials-list-link:hover {
+  background: var(--link-hover-accent);
 }
 
 /*--------------------------------------------1стр HERO--------------------------------------------*/
@@ -437,6 +516,104 @@ body {
   padding: 0;
 }
 
+.socials-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  list-style: none;
+  padding-inline-start: 0px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 30px;
+  padding-top: 16px;
+}
+
+.socials-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+  margin: 0;
+}
+
+.socials-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.socials-list-link:hover {
+  background-color: var(--link-hover-accent);
+}
+.social-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.social-icon:hover {
+  fill: var(--button-filter-hover-accent);
+}
+/*--------------------------------------------1стр ПОСТОЯННЫЕ КЛИЕНТЫ---------------------------------------------*/
+.section-clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: var(--text-title-color);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.clients-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+  list-style: none;
+  padding-inline-start: 0px;
+  padding: 0;
+  margin: 0;
+}
+.clients-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+  margin: 0;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-list-link {
+  padding: 0;
+  margin: 0;
+}
+
+.client-icon {
+  display: block;
+  width: 170px;
+  height: 92px;
+  fill: #afb1b8;
+}
+.client-icon:hover {
+  fill: var(--link-hover-accent);
+}
 /*--------------------------------------------2стр ФИЛЬТРЫ FILTERS---------------------------------------------*/
 
 /*.section-filters-portfolio-list {

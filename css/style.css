@@ -144,6 +144,8 @@ body {
 
 .header-contacts-item {
   margin-right: 50px;
+
+  display: flex;
 }
 .header-contacts-item:last-child {
   margin-right: 0px;
@@ -161,35 +163,24 @@ body {
   padding-bottom: 32px;
 }
 
+/*КОНВЕРТ*/
+.icon-envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+/*КСМАРТФОН*/
+.icon-smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 .header-contacts-link:hover,
 .header-contacts-link:focus {
   color: var(--link-contacts-hover-accent);
-}
-
-.header-contacts-link::before {
-  content: '';
-  display: inline-block;
-  vertical-align: middle;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-right: 10px;
-}
-
-.icon-envelope::before {
-  content: '';
-  background-image: url(../images/envelope.svg);
-  width: 16px;
-  height: 12px;
-}
-
-.icon-smarthphone::before {
-  content: '';
-  background-image: url(../images/smartphone.svg);
-  width: 10px;
-  height: 16px;
-}
-.icon-envelope:hover::before {
-  background-image: url(../images/envelope.svg);
 }
 
 /*--------------------------------------------FOOTER--------------------------------------------*/

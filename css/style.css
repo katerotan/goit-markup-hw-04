@@ -540,20 +540,21 @@ body {
   height: 44px;
   border-radius: 50%;
   background-color: #ffffff;
+  color: #afb1b8;
 }
-.socials-list-link:hover {
-  background-color: var(--link-hover-accent);
-}
+
 .social-icon {
   display: block;
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
+  fill: currentColor;
 }
 
-.social-icon:hover {
-  fill: var(--button-filter-hover-accent);
+.socials-list-link:hover {
+  background-color: var(--link-hover-accent);
+  color: var(--button-filter-hover-accent);
 }
+
 /*--------------------------------------------1стр ПОСТОЯННЫЕ КЛИЕНТЫ---------------------------------------------*/
 .section-clients {
   padding-top: 94px;
@@ -587,24 +588,31 @@ body {
 
   padding: 0;
   margin: 0;
-
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
 }
 
 .clients-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0;
   margin: 0;
+
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
 }
 
 .client-icon {
-  display: block;
-  width: 170px;
-  height: 92px;
-  fill: #afb1b8;
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
 }
-.client-icon:hover {
-  fill: var(--link-hover-accent);
+.clients-list-link:hover {
+  color: var(--link-hover-accent);
+  border: 1px solid var(--link-hover-accent);
+  border-radius: 4px;
 }
 /*--------------------------------------------2стр ФИЛЬТРЫ FILTERS---------------------------------------------*/
 

@@ -158,9 +158,10 @@ body {
   text-decoration: none;
   color: inherit;
 
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: center;
 }
 
 /*КОНВЕРТ*/

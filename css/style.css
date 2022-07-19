@@ -246,6 +246,7 @@ body {
 }
 .direction {
   display: flex;
+  align-items: baseline;
 }
 .footer-socials {
   margin-left: 70px;
@@ -257,7 +258,7 @@ body {
   line-height: 16.41px;
   color: #ffffff;
   margin: 0;
-  margin-top: 14.8px;
+
   margin-bottom: 20px;
   padding: 0;
 }
@@ -270,12 +271,6 @@ body {
   padding-inline-start: 0px;
 }
 .webstudio-socials-list-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  padding: 0;
-  margin: 0;
 }
 .webstudio-socials-list-link {
   display: flex;
@@ -294,7 +289,8 @@ body {
   height: 20px;
   fill: var(--button-filter-hover-accent);
 }
-.webstudio-socials-list-link:hover {
+.webstudio-socials-list-link:hover,
+.webstudio-socials-list-link:focus {
   background: var(--link-hover-accent);
 }
 
@@ -550,7 +546,8 @@ body {
   fill: currentColor;
 }
 
-.socials-list-link:hover {
+.socials-list-link:hover,
+.socials-list-link:focus {
   background-color: var(--link-hover-accent);
   color: var(--button-filter-hover-accent);
 }
@@ -609,7 +606,8 @@ body {
   height: 60px;
   fill: currentColor;
 }
-.clients-list-link:hover {
+.clients-list-link:hover,
+.clients-list-link:focus {
   color: var(--link-hover-accent);
   border: 1px solid var(--link-hover-accent);
   border-radius: 4px;
@@ -684,7 +682,13 @@ body {
   margin-bottom: 30px; /*отступы слева*/
 }
 
-.section-portfolio-item:hover {
+.section-portfolio-item-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.section-portfolio-item-link:hover,
+.section-portfolio-item-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
